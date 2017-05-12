@@ -6,7 +6,7 @@
 /**
 * 
 */
-class image 
+class imageabc
 {
 	
 	function index(){

@@ -6,20 +6,6 @@ namespace Composer\Autoload;
 
 class ComposerStaticInita739e75e3605103dcc825840724a1d65
 {
-    public static $prefixLengthsPsr4 = array (
-        'i' => 
-        array (
-            'image\\' => 6,
-        ),
-    );
-
-    public static $prefixDirsPsr4 = array (
-        'image\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
-    );
-
     public static $prefixesPsr0 = array (
         'P' => 
         array (
@@ -30,12 +16,15 @@ class ComposerStaticInita739e75e3605103dcc825840724a1d65
         ),
     );
 
+    public static $classMap = array (
+        'imageabc' => __DIR__ . '/../..' . '/src/fdsf/image.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita739e75e3605103dcc825840724a1d65::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita739e75e3605103dcc825840724a1d65::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInita739e75e3605103dcc825840724a1d65::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInita739e75e3605103dcc825840724a1d65::$classMap;
 
         }, null, ClassLoader::class);
     }
