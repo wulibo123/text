@@ -4,6 +4,7 @@
       		"overtrue/wechat": "2.0.*"
 	},
 	"autoload": {
-        "classmap": [ "src/"] 
-    }
+        "classmap": ["../www/jimujia-framework/api","../www/jimujia-framework/conf"] ,
+		"files":["jimujia-framework/conf/config.inc.php"]
+	}
 }
